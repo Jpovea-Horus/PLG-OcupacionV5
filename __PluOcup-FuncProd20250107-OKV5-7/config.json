@@ -1,0 +1,56 @@
+{
+    "id": "plg.plugin_ocupacion",
+    "version": "1.0.3.8",
+    "meta": {
+        "name": {
+            "text": "PluginOcupacionProd - :5: - 2024/12/27"
+        },
+        "description": {
+            "text": "Plugin Desarrollo (Elavoración doble sensor Mov)  para determinar si una habitacion se encuentra ocupada o libre, tomando la decision de habilitar los elementos asociados, o la accion contraria"
+        },
+        "author": {
+            "text": "Horus team"
+        },
+        "type": "node",
+        "language": "lua",
+        "placement": {
+            "static": true,
+            "custom": true
+        },
+        "subname":{
+            "text": "Data"
+        }
+        
+    },
+    "type": "gateway",
+    "dependencies": {
+        "firmware": "2.0",
+        "addons": [
+            {
+                "id": "lua",
+                "version": "1.0"
+            }
+        ]
+    },
+    "permissions": [
+        "core",
+        "http",
+        "json",
+        "zwave",
+        "timer",
+        "logging",
+        "storage",
+        "network"
+    ],
+    "executionPolicy": "restoreLastScriptState",
+    "startup": "scripts/startup",
+    "teardown": "scripts/teardown",
+    "gateway": {
+        "name": "Plugin ocupacion",
+        "label": "Plugin ocupacion",
+        "forceRemoveDeviceCommand": "HUB:plg.plugin_ocupacion/scripts/delete_device",
+        "setItemValueCommand": "HUB:plg.plugin_ocupacion/scripts/set_item_value",
+        "setSettingValueCommand":"HUB:plg.plugin_ocupacion/scripts/set_setting_value",
+        "setItemValueResponsePolicy": "auto"
+    }
+}
