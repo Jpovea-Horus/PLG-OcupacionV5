@@ -11,11 +11,13 @@ Permite configurar sensores de movimiento principales y secundarios. Sensores de
 ### Modo Automático: Configura si ciertos dispositivos deben activarse automáticamente con base en el estado de los sensores. ### Configuración El plugin requiere una configuración inicial con varios parámetros que se describen a continuación:
 
 ## Parámetros de configuración
-- itemId Sensor de Puerta (requerido): El itemId del sensor de puerta. itemId Sensor de Movimiento Principal (opcional): El itemId del sensor de movimiento principal. 
+- itemId Sensor de Puerta (requerido): El itemId del sensor de puerta.
+- itemId Sensor de Movimiento Principal (opcional): El itemId del sensor de movimiento principal. 
 - itemId Sensor de Movimiento Secundario (opcional): El itemId del sensor de movimiento secundario. 
 - itemId Actuadores On (opcional): El itemId de los dispositivos que se activarán cuando se detecte movimiento. 
 - itemId Actuadores Off (opcional): El itemId de los dispositivos que se desactivarán. 
-- itemId Actuadores Master Switch (opcional): El itemId del interruptor principal para activar o desactivar dispositivos. 
+- itemId Actuadores Master Switch (opcional): El itemId del interruptor principal para activar o desactivar dispositivos.
+
 - deviceId Termostato (opcional): El deviceId del termostato para ajustar la temperatura. 
 - SetPoint On Termostato (opcional): El valor de SetPoint para cuando el termostato se encienda. 
 - SetPoint Off Termostato (opcional): El valor de SetPoint para cuando el termostato se apague. 
@@ -24,5 +26,6 @@ Permite configurar sensores de movimiento principales y secundarios. Sensores de
 - Modo Off Puerta Abierta (opcional): Si se activa, el sistema se apaga al detectar que la puerta está abierta. 
 - Modo Disparador Luces (opcional): Indica si las luces deben activarse al detectar movimiento. 
 - Modo Disparador Master Switch (opcional): Indica si el Master Switch debe activarse al detectar movimiento. 
-- Tiempo Sensor de Scanner (requerido): El tiempo estimado de escaneo después de desactivar el sensor de movimiento. 
+- Tiempo Sensor de Scanner (requerido): El tiempo estimado de escaneo después de desactivar el sensor de movimiento.
+
 - Password (requerido): La contraseña para la configuración del plugin.
