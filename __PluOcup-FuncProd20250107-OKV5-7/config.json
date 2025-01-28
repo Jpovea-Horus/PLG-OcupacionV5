@@ -3,10 +3,10 @@
     "version": "1.0.3.8",
     "meta": {
         "name": {
-            "text": "PluginOcupacionProd - :5: - 2024/12/27"
+            "text": "PluginOcupacionProd - :5: - 2024/12/31"
         },
         "description": {
-            "text": "Plugin Desarrollo (Elavoración doble sensor Mov)  para determinar si una habitacion se encuentra ocupada o libre, tomando la decision de habilitar los elementos asociados, o la accion contraria"
+            "text": "Plugin Desarrollo para determinar si una habitacion se encuentra ocupada o libre, tomando la decision de habilitar los elementos asociados, o la accion contraria"
         },
         "author": {
             "text": "Horus team"
